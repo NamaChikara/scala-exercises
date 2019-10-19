@@ -1,0 +1,9 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mGradeSchoolTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- empty school[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- add student[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- add more students in same class[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- add students to different grades[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- get students in a grade[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- get students in a non-existant grade[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- sort school *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  List(4, 3, 6) was not equal to List(3, 4, 6) (GradeSchoolTest.scala:51)[0m[0m

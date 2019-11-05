@@ -1,4 +1,7 @@
 
+// https://www.quora.com/What-is-an-efficient-algorithm-to-find-divisors-of-any-number
+// https://www.geeksforgeeks.org/finding-all-subsets-of-a-given-set-in-java/
+
 object NumberType extends Enumeration {
   val Deficient, Perfect, Abundant = Value
 }
@@ -69,8 +72,8 @@ object PerfectNumbers {
         .view
         .filterKeys(_ > x)
         .values
-        .map(x => x + 1)
-        .reduceOption((a, b) => (a + 1) * (b + 1))
+        .map(_ + 1)
+        .reduceOption((a, b) => a * b)
         .getOrElse(1)
     ).toMap
 

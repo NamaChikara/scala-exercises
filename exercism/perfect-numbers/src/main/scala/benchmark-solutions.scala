@@ -65,8 +65,8 @@ def get_all_f(input: Int): Set[Int] = {
       .view
       .filterKeys(_ > x)
       .values
-      .map(x => x + 1)
-      .reduceOption((a, b) => (a + 1) * (b + 1))
+      .map(_ + 1)
+      .reduceOption((a, b) => a * b)
       .getOrElse(1)
   ).toMap
 

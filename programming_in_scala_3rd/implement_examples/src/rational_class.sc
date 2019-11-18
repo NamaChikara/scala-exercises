@@ -1,3 +1,5 @@
+// returning "this" from a mutable class vs
+// returning "this.copy()" from a mutable case class
 
 class Rational(n: Int, d: Int) {
 
@@ -57,3 +59,4 @@ val new_fourth = fourth max fifth
 
 new_fourth.temp = -2
 fourth.temp
+

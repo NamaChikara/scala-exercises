@@ -60,3 +60,24 @@ val new_fourth = fourth max fifth
 new_fourth.temp = -2
 fourth.temp
 
+// auxiliary constructor vs. default value
+
+class Frac(n: Int, d: Int = 1) {
+
+  override def toString = n + "/" + d
+
+}
+
+new Frac(4, 1).toString
+new Frac(4).toString
+
+class FracAux(n: Int, d: Int) {
+
+  def this(n: Int) = this(n, 1)
+
+  override def toString = n + "/" + d
+
+}
+
+new FracAux(4, 1)
+new FracAux(4)
